@@ -1,6 +1,3 @@
-Here's an extended and formatted README file based on your specifications:
-
----
 
 # BharatFD Back-End
 
