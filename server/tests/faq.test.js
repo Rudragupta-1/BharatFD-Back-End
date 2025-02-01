@@ -42,7 +42,7 @@ describe('FAQ API Tests', () => {
       .expect('Content-Type', /json/)
       .expect(400);
 
-    expect(response.body.errors).toHaveLength(2); // There should be validation errors
+    expect(response.body.errors).toHaveLength(2); 
   });
 
   it('should get translated FAQ for a given language', async () => {
@@ -57,7 +57,6 @@ describe('FAQ API Tests', () => {
   });
 
   afterAll(async () => {
-    // Cleanup test data if needed
     await request(app).delete(`/api/faqs/${faqId}`);
   });
 });
